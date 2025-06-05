@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      nav,
+      main,
+      footer {
+        padding: 20px;
+      }
+      nav {
+        background-color: #333;
+        color: white;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      section {
+        padding: 20px;
+        border-bottom: 1px solid #ccc;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenue sur mon Portfolio</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="about">
+        <h2>À propos de moi</h2>
+        <p>
+          Je suis un développeur web passionné par le design et le développement
+          de sites modernes.
+        </p>
+        <ul>
+          <li>HTML / CSS / JavaScript</li>
+          <li>Responsive Design</li>
+          <li>Créativité et innovation</li>
+        </ul>
+      </section>
+
+      <section id="work">
+        <h2>Mes Projets</h2>
+        <p>Voici quelques projets réalisés récemment :</p>
+        <table>
+          <tr>
+            <th>Projet</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>Site Vitrine</td>
+            <td>Un site pour un restaurant local</td>
+          </tr>
+          <tr>
+            <td>Portfolio</td>
+            <td>Mon propre portfolio personnel</td>
+          </tr>
+        </table>
+        <video width="320" height="240" controls>
+          <source src="video.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la balise vidéo.
+        </video>
+      </section>
+
+      <section id="resume">
+        <h2>Mon CV</h2>
+        <p>Téléchargez mon CV ici : <a href="cv.pdf" download>Mon CV</a></p>
+        <audio controls>
+          <source src="presentation.mp3" type="audio/mpeg" />
+          Votre navigateur ne supporte pas la balise audio.
+        </audio>
+      </section>
+
+      <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="#" method="post">
+          <label for="name">Nom :</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email :</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="message">Message :</label><br />
+          <textarea id="message" name="message" rows="5" required></textarea
+          ><br /><br />
+
+          <input type="submit" value="Envoyer" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>

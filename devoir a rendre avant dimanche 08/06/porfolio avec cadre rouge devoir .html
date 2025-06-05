@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mon Portfolio Simple</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: blue;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      nav {
+        background-color: red;
+        text-align: center;
+        padding: 10px;
+      }
+
+      nav a {
+        color: white;
+        margin: 10px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      section {
+        padding: 20px;
+        background-color: white;
+        margin: 20px;
+        border: 2px solid red;
+      }
+
+      footer {
+        background-color: blue;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+      form input,
+      form textarea {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        padding: 5px;
+      }
+
+      form input[type="submit"] {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Mon Portfolio</h1>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+      <h2>À propos</h2>
+      <p>
+        Je suis débutant en développement web et voici mon premier portfolio.
+      </p>
+    </section>
+
+    <section id="work">
+      <h2>Travail</h2>
+      <p>J'ai créé une page HTML simple avec du style rouge et bleu.</p>
+      <video width="300" controls>
+        <source src="video.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <section id="resume">
+      <h2>CV</h2>
+      <p><a href="cv.pdf" download>Télécharger mon CV</a></p>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mp3" />
+      </audio>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <label>Nom:</label>
+        <input type="text" name="nom" />
+
+        <label>Email:</label>
+        <input type="email" name="email" />
+
+        <label>Message:</label>
+        <textarea name="message" rows="4"></textarea>
+
+        <input type="submit" value="Envoyer" />
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Mon Portfolio Simple</p>
+    </footer>
+  </body>
+</html>
